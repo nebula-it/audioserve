@@ -15,7 +15,7 @@ jobs:
       #     docker login -u ${{secrets.DOCKERHUB_USER}} -p ${{secrets.DOCKERHUB_PASSWORD}}
       #     docker push izderadicka/audioserve:experimental
       - name: Log in to the Container registry
-        uses: docker/login-action
+        uses: docker/login-action@v3.3.0
         with:
           registry: https://ghcr.io
           username: ${{ github.actor }}
