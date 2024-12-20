@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - name: Build image
-        run: docker build --tag audioserve:debug --build-arg CARGO_RELEASE="" .
+        run: docker build --tag ghcr.io/nebula-it/audioserve:debug --build-arg CARGO_RELEASE="" .
       # - name: Publish image
       #   run: |
       #     docker login -u ${{secrets.DOCKERHUB_USER}} -p ${{secrets.DOCKERHUB_PASSWORD}}
